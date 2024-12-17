@@ -1,3 +1,7 @@
+// Display current year in the footer
+document.getElementById("current-year").textContent = new Date().getFullYear();
+
+// Navbar toggle functionality
 document.addEventListener("click", function (event) {
   const navbarCollapse = document.querySelector(".navbar-collapse");
   const isNavbarOpen = navbarCollapse.classList.contains("show");

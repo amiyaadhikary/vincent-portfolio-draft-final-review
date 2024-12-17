@@ -1,22 +1,71 @@
 /* Custom Styles */
-.navbar {
-  background-color: #2a9d8f;
+html {
+  scroll-padding-top: 55px; /* Adjust based on your navbar height */
+  scroll-behavior: smooth; /* Optional: Adds smooth scrolling */
+  font-family: "Poppins", sans-serif;
 }
+
+.navbar {
+  font-family: "Merriweather", serif;
+  /* background-color: #004d99; Professional dark blue */
+  background-color: #2a9d8f;
+  font-weight: 400;
+}
+
 .navbar-brand,
 .nav-link {
-  color: white !important;
+  color: #f3ecec !important; /* Black text */
+  transition: color 0.3s ease; /* Smooth transition */
 }
+
+.navbar-brand:hover,
 .nav-link:hover {
-  text-decoration: none;
+  color: #423d3d !important; /* Grey text on hover */
 }
+
 .hero-section {
-  background: linear-gradient(
-    45deg,
-    #2a9d8f,
-    #e9f7ef
-  ); /* Green to Mint Gradient */
-  padding: 40px 20px;
-  height: auto;
+  background: linear-gradient(45deg, #2a9d8f, #e9f7ef);
+  padding: 40px 0;
+  font-family: "Lato", "Open Sans", Arial, sans-serif;
+  color: #333; /* Dark Gray for better readability */
+  line-height: 1.6;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Merriweather", serif; /* Accent Font */
+  color: #2c5d3f; /* Deep Green for harmony */
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+div ul {
+  padding-left: 35px;
+}
+
+div ul li {
+  list-style: none;
+  padding-bottom: 5px;
+}
+
+div h4 a {
+  text-decoration: none;
+  color: #264653;
 }
 
 .hero-section img {
@@ -26,6 +75,7 @@
 }
 
 .bio {
+  font-family: "Roboto", sans-serif;
   background: linear-gradient(
     135deg,
     #5ad69c,
@@ -35,7 +85,10 @@
   border-radius: 12px; /* Slightly rounded corners */
   color: #000000; /* White text for contrast */
   box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1); /* Subtle shadow for a lifted effect */
-  font-family: "Arial", sans-serif;
+}
+.bio:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+  transition: transform 0.3s ease-in-out;
 }
 
 .bio h3 {
@@ -44,19 +97,25 @@
   font-weight: bold;
 }
 
+/* Biography */
 .bio p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-family: "Lato", "Roboto", "Open Sans", Arial, sans-serif;
+  font-size: 1.05rem; /* Standard size for readability */
+  line-height: 1.8; /* Improved line spacing */
+  color: #242323; /* Dark gray for better contrast */
 }
 
-.bio:hover {
-  transform: translateY(-2px); /* Lift effect on hover */
-  transition: transform 0.3s ease-in-out;
-}
-
+/* Subheadings (Interests and Education) */
 .sub-column h4 {
-  font-weight: bold;
-  padding-left: 35px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+a.university-link {
+  color: rgba(33, 55, 89, 0.88); /* Deep Blue */
+  text-decoration: none;
+  font-weight: 400;
 }
 
 .research-section {
@@ -64,59 +123,226 @@
   padding: 40px 20px;
 }
 
+#education-title,
+#interests-title {
+  padding-left: 22px;
+}
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  color: #fff; /* White text */
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+  backdrop-filter: blur(10px); /* Glassy blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.3); /* Slightly more visible on hover */
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+.btn-glass i {
+  margin-right: 5px; /* Spacing for icons */
+}
+
+/* Updated CSS for Research Article */
+/* Typography for Headings and Body */
+.research-section h2 {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #003366; /* Deep blue */
+}
+
+.research-article h4 {
+  font-family: "Merriweather", serif;
+  font-size: 2px;
+  font-weight: 400;
+  color: #003366; /* Deep blue */
+  margin-bottom: 10px;
+}
+
+.research-article h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c757d; /* Muted gray */
+  margin-bottom: 10px;
+}
+
+.research-article p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333333; /* Dark gray */
+  line-height: 1.6;
+}
+
+/* Links */
+.research-article a {
+  color: #0056b3; /* Soft blue */
+  text-decoration: none;
+}
+
+.research-article a:hover {
+  color: #003d80; /* Darker blue */
+  text-decoration: underline;
+}
+
+/* Button */
+.btn-outline-info {
+  color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-outline-info:hover {
+  color: #ffffff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
 .research-article {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   padding: 15px;
-  background-color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    #bbdefb,
+    #e3f2fd
+  ); /* Light blue gradient */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: "Open Sans", Arial, sans-serif; /* Clean and modern font */
 }
 
 .research-article:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.research-article img {
-  width: 120px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-right: 20px;
+/* Icon container */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
 }
 
-.article-content h5 a {
-  font-weight: 600;
-  font-size: 1.1rem;
+.icon-container i {
+  font-size: 85px;
+  color: #0d47a1; /* Dark blue for better visibility */
+}
+
+/* Recent Research Articles Section */
+.article-content {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.article-content h4 a {
+  font-size: 1.25rem; /* Larger size for the heading */
+  font-weight: 600; /* Bold for emphasis */
+  color: #0d47a1; /* Dark blue to match the icon */
   transition: color 0.3s ease;
 }
 
-.article-content h5 a:hover {
-  color: #007bff;
+.article-content h4 a:hover {
+  color: #1976d2; /* Lighter blue on hover */
 }
 
+/* Subheading */
+.article-content h6 {
+  font-size: 1rem; /* Slightly smaller than the title */
+  font-weight: 500;
+  color: #37474f; /* Dark gray for readability */
+  margin-top: 8px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Author and Publication Date */
 .article-content p {
+  font-size: 0.95rem;
+  color: #6c757d; /* Muted gray for supporting text */
   margin: 5px 0;
-  font-size: 0.9rem;
-  color: #6c757d;
+  line-height: 1.5;
+}
+
+/* Specific Styling for Publication Date */
+.article-content p:last-child {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #455a64; /* Slightly darker gray */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .research-article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-container {
+    margin: 0 0 15px 0;
+  }
+
+  .article-content h4 a {
+    font-size: 1.2rem;
+  }
+
+  .article-content h6 {
+    font-size: 0.9rem;
+  }
+
+  .article-content p {
+    font-size: 0.85rem;
+  }
 }
 
 .text-center a.btn {
   font-weight: 600;
   padding: 8px 16px;
-  border-radius: 50px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: azure;
 }
 
 .text-center a.btn:hover {
-  background-color: #007bff;
+  background-color: #7dcea1;
   color: #ffffff;
 }
 
-/* Experieince Timeline CSS */
+/* Experience Timeline CSS */
+.experience-section {
+  background: linear-gradient(135deg, #53dfb5, #e3f2fd);
+}
+
+.experience-section h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.45rem;
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Gradient Horizontal Line */
+.gradient-hr {
+  border: 0;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    rgba(41, 128, 185, 0) 0%,
+    rgba(41, 128, 185, 1) 50%,
+    rgba(41, 128, 185, 0) 100%
+  );
+  margin: 5px auto; /* Adjust margin to your needs */
+  width: 80%; /* Control the width of the line */
+}
+
 .experience-timeline {
   position: relative;
   max-width: 1200px;
@@ -133,7 +359,7 @@
   left: 50%;
   margin-left: -3px;
   animation: moveline 6s linear forwards;
-  z-index: -1;
+  z-index: 0;
 }
 
 @keyframes moveline {
@@ -151,6 +377,7 @@
   width: 50%;
   animation: movedown 1s linear forwards;
   opacity: 0;
+  z-index: 1;
 }
 
 @keyframes movedown {
@@ -170,7 +397,7 @@
   border-radius: 50%;
   right: -20px;
   top: 32px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .ex-container:nth-child(2) {
@@ -184,21 +411,28 @@
 }
 
 .text-box {
-  padding: 20px 30px;
+  padding: 18px 18px;
   position: relative;
-  background-color: #d7f7e7;
-  border-radius: 6px;
+  /* background-color: #d7f7e7; */
+  background: linear-gradient(135deg, #65e0ad, #92d8e9);
+  border-radius: 5px;
   font-size: 15px;
 }
 
 .text-box h4 {
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 1.15rem;
+  color: #2980b9; /* Highlighting company name with a blue color */
+  line-height: 1.6;
+  margin-bottom: 5px;
 }
 
 .text-box p {
   display: inline-block;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+.text-box strong {
+  color: #333333; /* Slightly lighter color for paragraph text */
 }
 
 .left-ex-container {
@@ -221,7 +455,7 @@
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid #d7f7e7;
+  border-left: 15px solid #92d8e9;
   right: -15px;
 }
 
@@ -233,7 +467,7 @@
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid #d7f7e7;
+  border-right: 15px solid #65e0ad;
   left: -15px;
 }
 
@@ -251,11 +485,13 @@
     padding-left: 80px;
     padding-right: 25px;
   }
+
   .text-box {
     font-size: 13px;
   }
+
   .text-box p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .right-ex-container {
@@ -269,10 +505,14 @@
 
   .left-ex-container-arrow,
   .right-ex-container-arrow {
-    border-right: 15px solid #d7f7e7;
+    border-right: 15px solid #65e0ad;
     border-left: 0;
     left: -15px;
   }
+}
+
+.projects-section {
+  background: linear-gradient(135deg, #90ebb9, #00bcd4);
 }
 
 .projects-section .card:hover {
@@ -302,20 +542,64 @@
   border-radius: 50%;
 }
 
-.contact-section-bg {
+/* Get in Touch Section */
+.contact-section {
   background-color: #d5ebdd;
 }
 
+.contact-section h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.75rem; /* For large screens */
+  color: #333333; /* Dark gray */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .contact-container {
-  width: 1140px;
+  max-width: 1140px;
   height: 372px;
-  margin: 50px auto;
+  margin: 0 auto; /* Single declaration */
+  margin-bottom: 25px;
   display: flex;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
   overflow: hidden;
   background-color: #ffffff;
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-info h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.contact-info a,
+.info a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-icons h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 00;
+  color: #444;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.3rem;
+  color: #2980b9;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #1abc9c; /* Light teal color on hover */
+  transform: scale(1.2);
 }
 
 .contact-container:hover {
@@ -323,12 +607,17 @@
   box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
 }
 
+.icon-container {
+  text-align: center; /* Centers the icon */
+  padding: 10px; /* Adds some padding around the icon */
+}
+
 .map {
   width: 650px;
   height: 100%;
 }
 
-.info {
+.contact-info {
   padding: 28px;
   flex: 1;
   background-color: #f8f9fa;
@@ -337,23 +626,24 @@
   justify-content: center;
 }
 
-.info h2 {
+.contact-info h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #333333;
   margin-bottom: 20px;
-  font-size: 2.25rem;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+  font-size: 2.12rem;
   color: #333;
   font-weight: bold;
 }
 
-.info p {
+.contact-info p {
   margin-bottom: 10px;
   font-size: 1rem;
   color: #555;
-}
-
-.info a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: 500;
 }
 
 .social-icons {
@@ -361,7 +651,7 @@
 }
 
 .social-icons a {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #6c757d;
   margin-right: 15px;
   text-decoration: none;
@@ -373,46 +663,182 @@
   transform: scale(1.1);
 }
 
+/* Mobile / Small Devices (up to 768px) */
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     height: auto;
   }
 
   .contact-info {
+    padding: 20px;
     width: 100%;
+  }
+
+  .map {
+    height: 300px;
+    width: 100%;
+  }
+
+  .contact-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+  }
+
+  .social-icons h5 {
+    font-size: 1.2rem;
+  }
+
+  .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 12px;
+  }
+}
+
+/* Mobile / Small Devices (up to 768px) */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .contact-info {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .map {
+    height: 300px;
+    width: 100%;
+  }
+
+  .contact-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+  }
+
+  .social-icons h5 {
+    font-size: 1.2rem;
+  }
+
+  .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 12px;
+  }
+}
+
+/* Medium Devices (tablets, 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-container {
+    flex-direction: row;
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .contact-info {
+    width: 48%;
     padding: 20px;
   }
 
   .map {
-    width: 100%;
-    height: 300px;
+    width: 48%;
+    height: 100%;
   }
 }
 
-div ul {
-  padding-left: 35px;
+/* Large Devices (desktop, 1024px and up) */
+@media (min-width: 1024px) {
+  .contact-container {
+    flex-direction: row;
+    width: 90%;
+    max-width: 1140px;
+    margin-bottom: 15px;
+  }
+
+  .contact-info {
+    width: 48%;
+    padding: 30px;
+  }
+
+  .map {
+    width: 48%;
+    height: 400px;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+  }
+
+  .social-icons a {
+    font-size: 1.8rem;
+  }
 }
 
-li {
-  list-style: none;
-  padding-bottom: 5px;
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .contact-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .contact-info {
+    width: 48%;
+    padding: 40px;
+  }
+
+  .map {
+    width: 48%;
+    height: 500px;
+  }
+
+  .contact-info h2 {
+    font-size: 2.2rem;
+  }
+
+  .contact-info p {
+    font-size: 1.1rem;
+  }
+
+  .social-icons a {
+    font-size: 2rem;
+  }
 }
 
-div h4 a {
-  text-decoration: none;
-  color: #264653;
-}
+/* Footer Styles */
 footer {
-  background-color: #264653;
-  color: white;
-  text-align: center;
+  background-color: #264653; /* Dark background for contrast */
+  color: #ecf0f1; /* Light text color for readability */
   padding: 20px 0;
-  margin-top: 40px;
+  text-align: center;
+  font-family: "Poppins", sans-serif; /* Poppins font for modern look */
+  font-size: 1rem; /* Adjusted font size for balance */
+  letter-spacing: 0.5px; /* Slight letter spacing for a cleaner look */
+  border-top: 2px solid #2980b9; /* Blue line for separation */
 }
 
 footer p {
   margin: 0;
-  padding: 0;
+  font-weight: 400; /* Normal weight for text */
+  line-height: 1.5;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+  footer p {
+    font-size: 0.9rem; /* Slightly smaller font on smaller screens */
+  }
 }
