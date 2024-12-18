@@ -20,6 +20,11 @@
     />
 
     <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
@@ -87,7 +92,7 @@
     <!-- Hero Section -->
     <section class="hero-section mt-5 mb-0">
       <div class="container">
-        <div class="row g-4">
+        <div class="row">
           <!-- Left Column -->
           <div class="col-lg-4 text-center">
             <img
@@ -471,7 +476,7 @@
         <div class="text-center my-4">
           <a
             href="https://scholar.google.de/citations?user=7oV0KL8AAAAJ&hl=de"
-            class="btn btn-outline-info"
+            class="glassmorphism-btn"
             target="_blank"
             >SEE ALL ></a
           >
@@ -482,8 +487,10 @@
     <!-- Projects Section -->
     <section id="projects" class="projects-section py-1 bg-light">
       <div class="container">
-        <h2 class="text-center fw-bold my-4">Featured Projects</h2>
-        <div class="row g-4">
+        <h2 class="section-heading text-center fw-bold my-4">
+          Featured Projects
+        </h2>
+        <div class="row">
           <!-- Project 1 -->
           <div class="col-md-6 col-lg-4 mb-4">
             <div
@@ -512,7 +519,7 @@
                   </p>
                   <a
                     href="https://bariatric-surgery-bmi-prediction-app-v20230612-x4xpw0.streamlit.app/"
-                    class="btn btn-outline-primary mt-2"
+                    class="card-btn mt-2"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -553,7 +560,7 @@
                   </p>
                   <a
                     href="https://right-hemicolectomy.streamlit.app/"
-                    class="btn btn-outline-primary mt-2"
+                    class="card-btn mt-2"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -593,7 +600,7 @@
                   </p>
                   <a
                     href="https://bariatric-surgery-bmi-prediction-app-v20230612-x4xpw0.streamlit.app/"
-                    class="btn btn-outline-primary mt-2"
+                    class="card-btn mt-2"
                     >Learn More</a
                   >
                 </div>
@@ -606,10 +613,12 @@
 
     <!-- Get in Touch Section -->
     <section id="contact" class="contact-section py-1">
-      <div class="text-center"><h1 class="my-3">Get in Touch</h1></div>
+      <div class="text-center section-heading">
+        <h1 class="my-3">Get in Touch</h1>
+      </div>
       <div class="contact-container">
         <!-- Left: Info Section -->
-        <div class="info contact-info pt-3">
+        <div class="info contact-info">
           <h2>Contact Details</h2>
           <p>
             <strong>Phone:</strong>
@@ -619,28 +628,24 @@
           </p>
           <p>
             <strong>Email:</strong>
-            <a href="#" class="text-decoration-none">your_name@example.com</a>
+            <a href="mailto:vincentochs@gmx.de" class="text-decoration-none">
+              vincentochs@gmx.de
+            </a>
           </p>
-          <p><strong>Address:</strong> 123 Main Street, New York, NY 10001</p>
+
+          <p><strong>Address:</strong> Basel, Switzerland</p>
 
           <div class="social-icons">
             <div><h5>Connect Me:</h5></div>
+            <a href="#" target="_blank" aria-label="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
             <a
               href="https://www.linkedin.com/in/vincentochs/"
               target="_blank"
               aria-label="LinkedIn"
             >
               <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="#" target="_blank" aria-label="Twitter">
-              <i class="bi bi-twitter"></i>
-            </a>
-            <a
-              href="https://www.xing.com/profile/VincentN_Ochs"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <i class="fa-brands fa-square-xing"></i>
             </a>
             <a
               href="https://scholar.google.de/citations?user=7oV0KL8AAAAJ"
@@ -655,9 +660,12 @@
         <!-- Right: Map Section -->
         <div class="map">
           <iframe
-            src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Basel,%20Switzerland&t=&z=13&ie=UTF8&iwloc=&output=embed"
             frameborder="0"
-            style="width: 100%; height: 100%"
+            style="width: 100%; height: 100%; border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
@@ -667,7 +675,7 @@
     <footer class="my-0">
       <p>
         &copy; <span id="current-year"></span> Vincent N. Ochs. All Rights
-        Reserved. | Crafted with care.
+        Reserved.
       </p>
     </footer>
 

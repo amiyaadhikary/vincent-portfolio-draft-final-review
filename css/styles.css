@@ -14,13 +14,15 @@ html {
 
 .navbar-brand,
 .nav-link {
-  color: #f3ecec !important; /* Black text */
+  color: #ffffff !important; /* Black text */
   transition: color 0.3s ease; /* Smooth transition */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
 }
 
 .navbar-brand:hover,
 .nav-link:hover {
-  color: #423d3d !important; /* Grey text on hover */
+  color: #131414 !important; /* Grey text on hover */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .hero-section {
@@ -76,18 +78,18 @@ div h4 a {
 
 .bio {
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(
-    135deg,
-    #5ad69c,
-    #afd3c1
-  ); /* Vibrant Gradient (Peach to Orange) */
+  background: rgba(255, 255, 255, 0.3); /* Transparent white for glass effect */
+  backdrop-filter: blur(10px); /* Blur background content */
+  -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
   padding: 30px;
   border-radius: 12px; /* Slightly rounded corners */
-  color: #000000; /* White text for contrast */
-  box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1); /* Subtle shadow for a lifted effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Semi-transparent border */
+  color: #000; /* Dark text for contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for a lifted effect */
 }
+
 .bio:hover {
-  transform: translateY(-2px); /* Lift effect on hover */
+  transform: translateY(-1px); /* Lift effect on hover */
   transition: transform 0.3s ease-in-out;
 }
 
@@ -100,9 +102,59 @@ div h4 a {
 /* Biography */
 .bio p {
   font-family: "Lato", "Roboto", "Open Sans", Arial, sans-serif;
-  font-size: 1.05rem; /* Standard size for readability */
+  font-size: 1.08rem; /* Standard size for readability */
   line-height: 1.8; /* Improved line spacing */
   color: #242323; /* Dark gray for better contrast */
+}
+
+/* For lower screen devices (mobile-first approach) */
+@media screen and (max-width: 768px) {
+  .bio {
+    margin-top: 20px; /* Reduce the top margin for better spacing */
+    padding: 15px; /* Adjust padding to fit smaller screens */
+    font-size: 14px; /* Reduce font size for readability */
+    border-radius: 8px; /* Slightly smaller corners */
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .bio {
+    margin-top: 20px; /* Reduce the top margin for better spacing */
+    padding: 15px; /* Adjust padding to fit smaller screens */
+    font-size: 14px; /* Reduce font size for readability */
+    border-radius: 8px; /* Slightly smaller corners */
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .bio {
+    margin-top: 20px; /* Reduce the top margin for better spacing */
+    padding: 15px; /* Adjust padding to fit smaller screens */
+    font-size: 14px; /* Reduce font size for readability */
+    border-radius: 8px; /* Slightly smaller corners */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .bio {
+    margin-top: 20px; /* Reduce the top margin for better spacing */
+    padding: 15px; /* Adjust padding to fit smaller screens */
+    font-size: 14px; /* Reduce font size for readability */
+    border-radius: 8px; /* Slightly smaller corners */
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .bio {
+    margin-top: 20px; /* Reduce the top margin for better spacing */
+    padding: 15px; /* Adjust padding to fit smaller screens */
+    font-size: 14px; /* Reduce font size for readability */
+    border-radius: 8px; /* Slightly smaller corners */
+  }
 }
 
 /* Subheadings (Interests and Education) */
@@ -128,35 +180,66 @@ a.university-link {
   padding-left: 22px;
 }
 
+/* General btn-glass styles */
+/* General styling for the button group */
+/* General styling for the button group */
+/* General styling for the button group */
+.btn-group {
+  display: flex;
+  gap: 1px; /* Adds spacing between buttons */
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem; /* Small font size */
+  font-weight: 500; /* Medium weight for emphasis */
+  padding: 8px 12px; /* Adjust button padding */
+  border-radius: px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  color: #ffffff; /* White text color */
+  background-color: rgba(42, 157, 143, 0.8); /* Transparent teal */
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2a9d8f; /* Darker teal on hover */
+  color: #ffffff !important; /* Ensure hover text color stays white */
+  font-weight: 600; /* Slightly bolder text on hover */
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
 .btn-glass {
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-  font-weight: 600;
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
-  border-radius: 8px; /* Rounded corners */
-  color: #fff; /* White text */
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
-  backdrop-filter: blur(10px); /* Glassy blur effect */
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
-  transition: all 0.3s ease; /* Smooth hover transition */
+  background: linear-gradient(
+    to right,
+    rgba(42, 157, 143, 0.4),
+    rgba(101, 224, 173, 0.4)
+  );
+  backdrop-filter: blur(10px); /* Adds glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for contrast */
 }
 
 .btn-glass:hover {
-  background: rgba(255, 255, 255, 0.3); /* Slightly more visible on hover */
-  border-color: rgba(255, 255, 255, 0.5);
-  transform: translateY(-2px); /* Slight lift effect */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+  background: linear-gradient(
+    to right,
+    rgba(42, 157, 143, 0.6),
+    rgba(101, 224, 173, 0.6)
+  );
+  color: #007bff !important; /* Ensure hover text color stays white */
 }
 
 .btn-glass i {
-  margin-right: 5px; /* Spacing for icons */
+  margin-right: 5px; /* Adds spacing between icon and text */
+  font-size: 1rem; /* Icon size */
 }
 
 /* Updated CSS for Research Article */
 /* Typography for Headings and Body */
 .research-section h2 {
   font-family: "Merriweather", serif;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 600;
   color: #003366; /* Deep blue */
 }
 
@@ -212,19 +295,18 @@ a.university-link {
   align-items: center;
   margin-bottom: 20px;
   padding: 15px;
-  background: linear-gradient(
-    135deg,
-    #bbdefb,
-    #e3f2fd
-  ); /* Light blue gradient */
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Blurred background for glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
+  border-radius: 12px; /* Rounded corners for smooth appearance */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   font-family: "Open Sans", Arial, sans-serif; /* Clean and modern font */
 }
 
 .research-article:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -307,23 +389,33 @@ a.university-link {
 
 .text-center a.btn {
   font-weight: 600;
-  padding: 8px 16px;
-  background-color: azure;
+  padding: 6px 14px;
+  border-radius: 7px; /* Added rounded corners */
+  background: rgba(40, 175, 108, 0.2); /* Transparent glassy background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle border for definition */
+  color: #000; /* Default text color */
+  text-decoration: none; /* Remove underline */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 
 .text-center a.btn:hover {
-  background-color: #7dcea1;
-  color: #ffffff;
+  transform: scale(1); /* Slight scale-up on hover */
+  box-shadow: 0 6px 12px rgba(66, 39, 39, 0.2); /* Increase shadow depth on hover */
 }
 
 /* Experience Timeline CSS */
 .experience-section {
-  background: linear-gradient(135deg, #53dfb5, #e3f2fd);
+  background: linear-gradient(
+    135deg,
+    #56b699,
+    #c9e8f7
+  ); /* Soft muted tones that echo the `.text-box` */
 }
 
 .experience-section h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 2.45rem;
+  font-size: 2.25rem;
   color: #2c3e50;
   font-weight: 700;
   margin-bottom: 20px;
@@ -332,7 +424,7 @@ a.university-link {
 /* Gradient Horizontal Line */
 .gradient-hr {
   border: 0;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(
     to right,
     rgba(41, 128, 185, 0) 0%,
@@ -346,7 +438,7 @@ a.university-link {
 .experience-timeline {
   position: relative;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 0px auto;
 }
 
 .experience-timeline::after {
@@ -354,7 +446,12 @@ a.university-link {
   position: absolute;
   width: 6px;
   height: 100%;
-  background-color: #5f5b5b;
+  background: linear-gradient(
+    180deg,
+    #4db98c,
+    #2a9d8f,
+    #65e0ad
+  ); /* Gradient from your primary and navbar colors */
   top: 0;
   left: 50%;
   margin-left: -3px;
@@ -409,19 +506,27 @@ a.university-link {
 .ex-container:nth-child(4) {
   animation-delay: 3s;
 }
+.ex-container:nth-child(5) {
+  animation-delay: 4s;
+}
+.ex-container:nth-child(6) {
+  animation-delay: 5s;
+}
 
 .text-box {
   padding: 18px 18px;
   position: relative;
-  /* background-color: #d7f7e7; */
   background: linear-gradient(135deg, #65e0ad, #92d8e9);
   border-radius: 5px;
   font-size: 15px;
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .text-box h4 {
   font-size: 1.15rem;
-  color: #2980b9; /* Highlighting company name with a blue color */
+  font-weight: 400;
+  color: #2980b9;
   line-height: 1.6;
   margin-bottom: 5px;
 }
@@ -433,6 +538,7 @@ a.university-link {
 
 .text-box strong {
   color: #333333; /* Slightly lighter color for paragraph text */
+  font-weight: 600;
 }
 
 .left-ex-container {
@@ -477,7 +583,88 @@ a.university-link {
     margin: 50px auto;
   }
   .experience-timeline::after {
-    left: 31px;
+    left: 30px;
+  }
+
+  .ex-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .text-box {
+    font-size: 13px;
+  }
+
+  .text-box p {
+    margin-bottom: 5px;
+  }
+
+  .right-ex-container {
+    left: 0;
+  }
+
+  .left-ex-container img,
+  .right-ex-container img {
+    left: 10px;
+  }
+
+  .left-ex-container-arrow,
+  .right-ex-container-arrow {
+    border-right: 15px solid #65e0ad;
+    border-left: 0;
+    left: -15px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .experience-timeline {
+    margin: 50px auto;
+  }
+  .experience-timeline::after {
+    left: 30px;
+  }
+
+  .ex-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .text-box {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .text-box p {
+    margin-bottom: 5px;
+  }
+
+  .right-ex-container {
+    left: 0;
+  }
+
+  .left-ex-container img,
+  .right-ex-container img {
+    left: 10px;
+  }
+
+  .left-ex-container-arrow,
+  .right-ex-container-arrow {
+    border-right: 15px solid #65e0ad;
+    border-left: 0;
+    left: -15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .experience-timeline {
+    margin: 50px auto;
+  }
+  .experience-timeline::after {
+    left: 30px;
   }
 
   .ex-container {
@@ -516,14 +703,14 @@ a.university-link {
 }
 
 .projects-section .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-1px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
 .projects-section .card img {
   object-fit: cover;
-  height: 250px;
+  height: auto;
 }
 
 .projects-section h2 {
@@ -531,25 +718,60 @@ a.university-link {
 }
 
 .projects-section .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
   transition: all 0.3s ease;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.projects-section .carousel-control-prev-icon,
-.projects-section .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
+/* Glassmorphism Button Styles */
+.glassmorphism-btn {
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #000000; /* Primary theme color for text */
+  background: rgba(
+    49,
+    221,
+    64,
+    0.2
+  ); /* Transparent background for glassmorphism effect */
+  border: 1px solid #90b8a7; /* Primary theme color for border */
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.glassmorphism-btn:hover {
+  color: #003366;
+  background-color: #23c981;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-color: #25805a; /* Same color for border on hover */
+}
+
+.glassmorphism-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(101, 224, 173, 0.5); /* Lighter shade of primary color for focus effect */
+}
+
+.glassmorphism-btn:active {
+  background-color: #4bbf92; /* Slightly darker shade of primary color on click */
+  border-color: #4bbf92;
 }
 
 /* Get in Touch Section */
 .contact-section {
-  background-color: #d5ebdd;
+  background: linear-gradient(135deg, #96e7d6, #56c79b);
 }
 
 .contact-section h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.75rem; /* For large screens */
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2.55rem; /* For large screens */
   color: #333333; /* Dark gray */
   text-align: center;
   margin-bottom: 20px;
@@ -564,20 +786,18 @@ a.university-link {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   overflow: hidden;
-  background-color: #ffffff;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .contact-info h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #2c3e50;
+  font-size: 1.15rem;
+  color: #1f75cc;
   margin-bottom: 15px;
 }
 
 .contact-info a,
 .info a {
-  color: #2980b9;
+  color: #3c4850;
   text-decoration: none;
   font-weight: 500;
 }
@@ -585,7 +805,7 @@ a.university-link {
 .social-icons h5 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-weight: 00;
+  font-weight: 500;
   color: #444;
 }
 
@@ -603,7 +823,6 @@ a.university-link {
 }
 
 .contact-container:hover {
-  transform: scale(1.005);
   box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
 }
 
@@ -618,12 +837,10 @@ a.university-link {
 }
 
 .contact-info {
-  padding: 28px;
   flex: 1;
-  background-color: #f8f9fa;
+  background: linear-gradient(285deg, #e3f2fd, #bbdefb); /* Soft light blue */
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .contact-info h1 {
@@ -667,11 +884,12 @@ a.university-link {
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
-    width: 95%;
+    width: 90%;
     height: auto;
   }
 
   .contact-info {
+    background: linear-gradient(360deg, #e3f2fd, #bbdefb);
     padding: 20px;
     width: 100%;
   }
@@ -703,12 +921,13 @@ a.university-link {
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
-    width: 95%;
+    width: 90%;
     height: auto;
     margin-bottom: 15px;
   }
 
   .contact-info {
+    background: linear-gradient(360deg, #e3f2fd, #bbdefb);
     padding: 20px;
     width: 100%;
   }
@@ -745,6 +964,7 @@ a.university-link {
   }
 
   .contact-info {
+    background: linear-gradient(360deg, #e3f2fd, #bbdefb);
     width: 48%;
     padding: 20px;
   }
@@ -765,6 +985,7 @@ a.university-link {
   }
 
   .contact-info {
+    background: linear-gradient(360deg, #e3f2fd, #bbdefb);
     width: 48%;
     padding: 30px;
   }
@@ -796,13 +1017,12 @@ a.university-link {
   }
 
   .contact-info {
-    width: 48%;
-    padding: 40px;
+    background: linear-gradient(285deg, #e3f2fd, #bbdefb);
+    width: 40%;
   }
 
   .map {
-    width: 48%;
-    height: 500px;
+    width: 60%;
   }
 
   .contact-info h2 {
@@ -814,8 +1034,75 @@ a.university-link {
   }
 
   .social-icons a {
-    font-size: 2rem;
+    font-size: 1.85rem;
   }
+}
+
+/* Section Heading */
+.section-heading h1 {
+  font-family: "Merriweather", serif;
+  font-size: 1.85rem; /* Prominent and attention-grabbing */
+  font-weight: 600; /* Bold weight for strong emphasis */
+  color: #2b4561; /* Vibrant blue for visual appeal */
+  letter-spacing: 1px; /* Slight spacing for elegance */
+  text-transform: uppercase; /* Professional look */
+  margin-bottom: 20px;
+}
+
+/* Subheadings */
+.contact-info h2 {
+  font-size: 1.8rem; /* Smaller than main heading but still bold */
+  font-weight: 600; /* Medium weight for a clean hierarchy */
+  color: #363a3d; /* Match brand/theme color */
+  margin-bottom: 15px;
+}
+
+.contact-info h5 {
+  font-size: 1.2rem; /* Subtle but clear subheading */
+  font-weight: 500;
+  color: #1f1d1d; /* Softer shade for less emphasis */
+  margin-top: 20px;
+}
+
+/* Paragraph Text */
+.contact-info p {
+  font-size: 1rem; /* Comfortable base size */
+  margin-bottom: 10px;
+}
+
+.contact-info strong {
+  font-weight: 600; /* Highlight labels */
+  color: #000; /* Stronger contrast for importance */
+}
+
+.contact-info a {
+  color: #003f7d; /* Darker shade on hover */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.contact-info a:hover {
+  color: #0056b3; /* Branded color */
+  text-decoration: underline; /* Subtle visual cue */
+}
+
+.contact-info i {
+  margin-right: 2px; /* Adds spacing between icon and text */
+  font-size: 1.7rem; /* Icon size */
+}
+
+/* Social Icons */
+.social-icons a {
+  font-size: 1.7rem; /* Slightly larger for emphasis */
+  color: #003f7d; /* Darker shade on hover */
+  margin-right: 10px;
+  transition: color 0.1s ease, transform 0.02s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+  transform: scale(1.1); /* Subtle hover animation */
 }
 
 /* Footer Styles */
@@ -841,4 +1128,35 @@ footer p {
   footer p {
     font-size: 0.9rem; /* Slightly smaller font on smaller screens */
   }
+}
+
+/* Essential button CSS */
+.card-btn {
+  display: inline-block; /* Makes it behave like a button */
+  padding: 5px 8px; /* Adds space around the text */
+  background-color: #65e0ad; /* Primary theme color for the button */
+  color: rgb(7, 6, 6); /* Text color */
+  font-size: 15px; /* Font size */
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes underline from the link */
+  border: 2px solid transparent; /* Transparent border for layout */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Changes the cursor to a pointer */
+}
+
+/* Hover effect */
+.card-btn:hover {
+  background-color: #4acfa5; /* Slightly darker shade of the primary color for hover */
+}
+
+/* Focus effect for accessibility */
+.card-btn:focus {
+  outline: 1px solid #ffbf47; /* Adds a focus ring */
+  outline-offset: 2px; /* Moves focus ring away from the button */
+}
+
+/* Active effect for button press */
+.card-btn:active {
+  background-color: #3d9e84; /* Darker shade of the primary color when clicked */
+  transform: translateY(0); /* Resets the lifting effect */
 }
