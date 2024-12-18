@@ -492,6 +492,7 @@ a.university-link {
   position: absolute;
   width: 40px;
   border-radius: 50%;
+  border: 1px solid #00bcd4;
   right: -20px;
   top: 32px;
   z-index: 2;
