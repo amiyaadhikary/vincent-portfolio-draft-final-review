@@ -218,15 +218,18 @@ a.university-link {
   );
   backdrop-filter: blur(10px); /* Adds glass effect */
   border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for contrast */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover */
 }
 
 .btn-glass:hover {
   background: linear-gradient(
     to right,
-    rgba(42, 157, 143, 0.6),
-    rgba(101, 224, 173, 0.6)
+    rgba(42, 157, 143, 0.9),
+    rgba(101, 224, 173, 0.9)
   );
-  color: #007bff !important; /* Ensure hover text color stays white */
+  box-shadow: 0 4px 15px rgba(42, 157, 143, 0.5); /* Adds a glowing effect */
+  color: #ffffff !important; /* Ensure hover text color stays white */
+  border-color: rgba(255, 255, 255, 0.6); /* Brighter border on hover */
 }
 
 .btn-glass i {
