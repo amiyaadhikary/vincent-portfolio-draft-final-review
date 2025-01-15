@@ -102,7 +102,7 @@ div h4 a {
 /* Biography */
 .bio p {
   font-family: "Lato", "Roboto", "Open Sans", Arial, sans-serif;
-  font-size: 1.08rem; /* Standard size for readability */
+  font-size: 1.05rem; /* Standard size for readability */
   line-height: 1.8; /* Improved line spacing */
   color: #242323; /* Dark gray for better contrast */
 }
@@ -112,7 +112,7 @@ div h4 a {
   .bio {
     margin-top: 20px; /* Reduce the top margin for better spacing */
     padding: 15px; /* Adjust padding to fit smaller screens */
-    font-size: 14px; /* Reduce font size for readability */
+    font-size: 12px; /* Reduce font size for readability */
     border-radius: 8px; /* Slightly smaller corners */
   }
 }
@@ -181,8 +181,6 @@ a.university-link {
 }
 
 /* General btn-glass styles */
-/* General styling for the button group */
-/* General styling for the button group */
 /* General styling for the button group */
 .btn-group {
   display: flex;
@@ -268,6 +266,12 @@ a.university-link {
   font-weight: 400;
   color: #333333; /* Dark gray */
   line-height: 1.6;
+}
+
+.pub_by {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: #6c757d; /* Dark gray */
 }
 
 /* Links */
@@ -502,19 +506,19 @@ a.university-link {
 }
 
 .ex-container:nth-child(2) {
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 .ex-container:nth-child(3) {
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 .ex-container:nth-child(4) {
-  animation-delay: 3s;
+  animation-delay: 3.5s;
 }
 .ex-container:nth-child(5) {
-  animation-delay: 4s;
+  animation-delay: 4.5s;
 }
 .ex-container:nth-child(6) {
-  animation-delay: 5s;
+  animation-delay: 5.5s;
 }
 
 .text-box {
@@ -1045,11 +1049,12 @@ a.university-link {
 /* Section Heading */
 .section-heading h1 {
   font-family: "Merriweather", serif;
-  font-size: 1.85rem; /* Prominent and attention-grabbing */
-  font-weight: 600; /* Bold weight for strong emphasis */
-  color: #2b4561; /* Vibrant blue for visual appeal */
-  letter-spacing: 1px; /* Slight spacing for elegance */
-  text-transform: uppercase; /* Professional look */
+  font-size: 1.85rem;
+  font-size: 30px;
+  font-weight: 600;
+  color: #2b4561;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   margin-bottom: 20px;
 }
 
